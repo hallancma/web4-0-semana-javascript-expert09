@@ -1,0 +1,10 @@
+setInterval(async () => console.log(await LanguageModel.availability()), 500)
+
+const ai = await LanguageModel.create({ 
+expectedInputLanguages: ["pt"],
+  monitor(m) {
+    m.addEventListener('downloadprogress', (e) => {
+      console.log(`Downloaded ${e.loaded * 100}%`);
+    });
+  },
+ })

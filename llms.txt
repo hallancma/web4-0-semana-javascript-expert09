@@ -1,0 +1,141 @@
+# Oracle APEX — Crie apps empresariais 20x mais rápido
+
+O **Oracle APEX** é a plataforma **low-code** da Oracle para construir **aplicativos web e móveis seguros, escaláveis e modernos** diretamente no **Oracle Database** — na **nuvem (OCI/Autonomous)** ou **on-premises**. Foco no negócio; o APEX cuida do resto.
+
+---
+
+## O que você encontra aqui
+- **O que é e por que usar**
+- **Casos de uso**
+- **Como funciona**
+- **Benefícios**
+- **Versões recentes**
+- **História**
+- **Como começar**
+- **FAQ**
+
+---
+
+## Benefícios
+- **Velocidade**: construa telas, relatórios, gráficos e CRUD completos **sem front-end manual**.  
+- **Menos código, menos risco**: muito é **declarativo**, usando **PL/SQL/SQL** só quando necessário.  
+- **Seguro por padrão**: executa dentro do **Oracle Database**.  
+- **Escalável**: herda performance e disponibilidade do DB.  
+- **Custo**: incluído no Oracle Database, sem licença adicional.  
+- **Integrações**: REST, ORDS, OAuth, plugins.  
+- **UX moderna**: Universal Theme, responsivo, acessível.  
+- **Governança**: workspaces, controle de acesso, CI/CD.  
+
+---
+
+## Casos de Uso
+- Substituir **planilhas** por apps multiusuário com auditoria.  
+- Criar **sistemas internos** de cadastro, aprovação e workflow.  
+- Montar **dashboards e relatórios interativos**.  
+- Estender sistemas ERP/SaaS (EBS, Fusion, etc.).  
+- Criar **portais de dados** para parceiros.  
+- Construir **MVPs rápidos** ou provas de conceito.  
+- Desenvolver **apps SaaS multi-tenant** sobre Autonomous DB.  
+
+---
+
+## Como funciona
+1. **Ambiente**: Oracle Cloud (Autonomous DB/APEX Service) ou on-premises com ORDS.  
+2. **Desenvolvimento declarativo**: páginas, formulários, relatórios, gráficos e ações dinâmicas.  
+3. **Lógica e dados**: SQL/PLSQL + integrações REST.  
+4. **Deploy e operação**: export/import, SQLcl, Liquibase, pipelines de CI/CD.  
+
+---
+
+## Versões recentes
+- **24.2**: novos recursos de UX, melhorias no Universal Theme.  
+- **23.x–24.1**: avanços em relatórios interativos, REST Data Sources, mapas, acessibilidade.  
+
+---
+
+## História
+# 📌 Evolução do Oracle APEX
+
+| Ano  | Versão | Principais novidades |
+|------|--------|----------------------|
+| 2004 | 1.0    | Lançado como **HTML DB**, primeira versão pública. |
+| 2005 | 1.5    | Melhorias de relatórios e suporte adicional a componentes. |
+| 2006 | 2.0    | Renomeado para **Oracle Application Express (APEX)**. |
+| 2007 | 3.0    | Suporte a **PDF Printing** e integração com BI Publisher. |
+| 2008 | 3.1    | Introdução dos **Interactive Reports**. |
+| 2009 | 3.2    | Ferramenta de **migração do Oracle Forms para APEX**. |
+| 2010 | 4.0    | **Dynamic Actions**, **Plug-ins** e **Team Development**. |
+| 2011 | 4.1    | Melhorias em calendários e **Data Upload**. |
+| 2012 | 4.2    | Suporte a **HTML5**, **CSS3** e **mobile apps**. |
+| 2014 | 5.0    | Lançamento do **Page Designer** e **Universal Theme (UT)**. |
+| 2017 | 5.1    | Introdução do **Interactive Grid**. |
+| 2018 | 18.1   | Novo ciclo de versionamento (ano.release), melhorias em **REST Workshop**. |
+| 2018 | 18.2   | Melhorias em **REST, Charts e Universal Theme**. |
+| 2019 | 19.1   | **Faceted Search** e melhorias em autenticação. |
+| 2019 | 19.2   | **Automations** e **Dark Mode** no builder. |
+| 2020 | 20.1   | **Friendly URLs** e melhorias em **REST Data Sources**. |
+| 2020 | 20.2   | **Mega Menu Navigation** e melhorias no Universal Theme. |
+| 2021 | 21.1   | **Map Regions** e suporte a **PWAs**. |
+| 2021 | 21.2   | **REST Source Synchronization** e suporte ao **Redwood Theme**. |
+| 2022 | 22.1   | Melhorias em **Application Data Loading** e introdução do **Data Generator**. |
+| 2022 | 22.2   | Suporte expandido a **REST Data Sources** e melhorias no Redwood Theme. |
+| 2023 | 23.1   | **Declarative WebSocket support**, melhorias em **Charts**. |
+| 2023 | 23.2   | **AI integration (beta)**, novos recursos de **Automation**. |
+| 2024 | 24.1   | Melhorias em **Redwood Theme**, **REST Enhancements**, e performance no Page Designer. |
+| 2024 | 24.2   | Expansão de **AI Assist**, melhorias em **Interactive Reports** e **Charts**. |
+
+
+---
+
+## Como começar
+- Crie um ambiente **gratuito na Oracle Cloud** (Free Tier).  
+- Gere um app a partir de **tabelas ou planilhas**.  
+- Explore relatórios, dashboards e forms.  
+- Publique e compartilhe em dias (ou horas).  
+
+> Dica: comece pelo **App from Spreadsheet**: suba um Excel e ganhe CRUD completo automaticamente.
+
+---
+
+## FAQ
+
+**O APEX é pago?**  
+Não. Ele faz parte do Oracle Database, sem custo adicional.
+
+**Preciso saber JavaScript?**  
+Não para o básico. A maioria é declarativa. JS ajuda em customizações.
+
+**Escala bem?**  
+Sim, aproveita a escalabilidade do Oracle Database/OCI.
+
+**Integra com outros sistemas?**  
+Sim: REST APIs, OAuth, DB Links, webhooks e mais.
+
+**Funciona on-premises?**  
+Sim: basta Oracle DB + ORDS + APEX.
+
+**Tem suporte a CI/CD?**  
+Sim: export SQL + Git + SQLcl + Liquibase + pipelines.
+
+---
+
+## Trilhas de aprendizado (exemplo)
+- **Iniciante**: Builder, Universal Theme, CRUD.  
+- **Modelagem & SQL**: PL/SQL, packages, validações.  
+- **Integrações**: REST Data Sources, OAuth, webhooks.  
+- **UX & Interatividade**: Dynamic Actions, charts.  
+- **Governança & DevOps**: workspaces, auditoria, CI/CD.  
+
+---
+
+## CTA — Experimente agora 🚀
+- Teste grátis: crie um app a partir de planilha em minutos.  
+- Explore exemplos prontos (dashboards, relatórios, apps).  
+- Precisa migrar planilhas/sistemas legados? Mostramos o caminho em 1 semana.  
+
+---
+
+## Comparando com alternativas
+- **Low-code real**: menos boilerplate front-end.  
+- **Colado ao dado**: integra direto com o Oracle DB.  
+- **Ciclo curto**: MVPs em dias, não meses.  

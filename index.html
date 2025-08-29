@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="./botData/avatar.webp" />
+    <link rel="icon" type="image/x-icon" href="./botData/avatar.webp" />
+    <link
+      rel="mask-icon"
+      sizes="all"
+      href="https://apex.oracle.com/assets/media/icons/pinned-icon.svg"
+      color="#C74634"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://apex.oracle.com/assets/media/icons/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="https://apex.oracle.com/assets/media/icons/icon.png"
+    />
+    <meta name="theme-color" content="#377E55" />
+
+    <!-- CSS do site -->
+    <link
+      rel="stylesheet"
+      href="https://apex.oracle.com/assets/css/core.min.css?v=24.05.13"
+    />
+
+    <!-- Font Awesome (ícones) - sem Google -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-HHsOC+MwWc1cKTI7uF6+G7bm+DYhrAKiQjQAVnH3r6rQlGflVjTv2oHh3z81DdQhvf7w6oVqZ5G6hvax2xxa9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Oracle APEX - Crie aplicativos empresariais 20x mais rápido</title>
+
+    <style>
+      @media screen and (min-width: 768px) {
+        #low_code.m-Section .u-Grid-row {
+          flex-wrap: nowrap;
+        }
+        #low_code .m-Section-content--media {
+          flex-basis: 100%;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        #low_code .m-Section-content--media {
+          flex-basis: 70%;
+        }
+      }
+      .business-innovations-block .m-Section-subTitle {
+        font-size: 22px;
+      }
+      .business-innovations-banner {
+        background-color: transparent;
+      }
+    </style>
+    <!-- Scripts de UI do site -->
+    <script src="https://apex.oracle.com/assets/js/apexWebsiteBanners.js"></script>
+    <script src="https://apex.oracle.com/assets-ui/js/bannerWriter.js"></script>
+
+    <!-- Stubs/segurança para funcionar offline/estático caso os scripts acima não carreguem -->
+    <script>
+      window.apexWebsiteBanners = window.apexWebsiteBanners || [];
+      window.writeBanner =
+        window.writeBanner ||
+        function () {
+          /* noop em demo estático */
+        };
+    </script>
+  </head>
+  <body class="m-Page m-Page--styleguide is-dark-mode" id="top">
+    <!-- Page Container -->
+
+    <div class="m-PageContainer">
+      <!-- Header -->
+      <div class="m-HeaderContainer">
+        <header class="m-Header" role="banner">
+          <div class="m-Header-wrap u-Grid-container">
+            <!-- Header Lockup -->
+            <div class="m-Header-lockup">
+              <a
+                class="m-Header-skipToContent"
+                href="#"
+                role="button"
+                aria-label="Ir para o conteúdo"
+                >Skip to content</a
+              >
+              <a
+                class="m-Header-logoLink"
+                href="#"
+                role="button"
+                aria-label="Oracle APEX"
+              >
+                <svg
+                  class="m-Header-logo"
+                  role="img"
+                  aria-labelledby="m-Header-logoText"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 36 24"
+                >
+                  <title id="m-Header-logoText">Oracle</title>
+                  <path
+                    d="M24.6 0C30.9 0 36 5.4 36 12s-5.1 12-11.4 12H11.4C5.1 24 0 18.6 0 12S5.1 0 11.4 0h13.2zm-.3 4H11.7c-4.1 0-7.4 3.6-7.4 8s3.3 8 7.4 8h12.6c4.1 0 7.4-3.6 7.4-8s-3.3-8-7.4-8z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="m-Header-logoTagLine" _data-alttagline="APEX"
+                  >APEX</span
+                >
+              </a>
+            </div>
+            <!-- // Header Lockup -->
+
+            <!-- Header Body -->
+            <div class="m-Header-body">
+              <button
+                class="m-HeaderNav-toggle"
+                aria-expanded="false"
+                aria-controls="header-nav-menu"
+                aria-haspopup="true"
+              >
+                <span class="m-HeaderNav-toggleIcon fa fa-bars"></span>
+                <span class="m-HeaderNav-toggleText">Menu</span>
+              </button>
+
+              <nav class="m-HeaderNav" id="header-nav" role="none">
+                <div
+                  class="m-HeaderNav-menuWrap"
+                  role="navigation"
+                  aria-label="APEX Website"
+                >
+                  <ul
+                    class="m-HeaderNav-menu"
+                    role="menubar"
+                    id="header-nav-menu"
+                  >
+                    <li class="m-HeaderNav-menuItem has-menu" role="none">
+                      <span
+                        class="m-HeaderNav-menuLabel"
+                        role="menuitem"
+                        tabindex="-1"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        >Plataforma</span
+                      >
+                      <ul
+                        class="m-HeaderNav-subMenu"
+                        role="menu"
+                        aria-label="Plataforma"
+                      >
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Visão Geral</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >APEX no Oracle Cloud</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Oracle APEX + Inteligência Artificial</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Por que o Oracle APEX?</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Baixo Código</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Funcionalidades</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Arquitetura</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Implantação</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Desenvolvido pela Oracle</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="m-HeaderNav-menuItem has-menu" role="none">
+                      <span
+                        class="m-HeaderNav-menuLabel"
+                        role="menuitem"
+                        tabindex="-1"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        >Soluções</span
+                      >
+                      <ul
+                        class="m-HeaderNav-subMenu"
+                        role="menu"
+                        aria-label="Soluções"
+                      >
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Visão Geral</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Casos de Uso</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Modernizando o Oracle Forms</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Aplicativos e Plug-ins</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Histórias de Sucesso</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="m-HeaderNav-menuItem has-menu" role="none">
+                      <span
+                        class="m-HeaderNav-menuLabel"
+                        role="menuitem"
+                        tabindex="-1"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        >Para Aprender</span
+                      >
+                      <ul
+                        class="m-HeaderNav-subMenu"
+                        role="menu"
+                        aria-label="Para Aprender"
+                      >
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Visão Geral</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Para Começar</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Criando o Seu Primeiro Aplicativo APEX</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Documentação</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Treinamento e Certificações</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Laboratórios e Tutoriais</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Vídeos</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Recursos Adicionais</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="m-HeaderNav-menuItem has-menu" role="none">
+                      <span
+                        class="m-HeaderNav-menuLabel"
+                        role="menuitem"
+                        tabindex="-1"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        >Comunidade</span
+                      >
+                      <ul
+                        class="m-HeaderNav-subMenu"
+                        role="menu"
+                        aria-label="Comunidade"
+                      >
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Visão Geral</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Eventos</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Ideas</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Recursos da Comunidade</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Office Hours</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Blog</a
+                          >
+                        </li>
+                        <li class="m-HeaderNav-subMenuItem" role="none">
+                          <a
+                            class="m-HeaderNav-subMenuLabel"
+                            href="#"
+                            role="button"
+                            tabindex="-1"
+                            >Fóruns</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="m-Search" role="search">
+                  <button
+                    class="m-HeaderSearch-button"
+                    aria-label="Search"
+                    title="Search"
+                  >
+                    <span
+                      class="m-HeaderSearch-buttonIcon fa fa-search"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <div class="m-HeaderSearch-container">
+                    <div class="m-HeaderSearch-overlay"></div>
+                    <div class="m-HeaderSearch">
+                      <input
+                        id="header_search"
+                        type="search"
+                        placeholder="Pesquisar…"
+                      />
+                      <label for="header_search" class="u-VisuallyHidden"
+                        >Pesquisa</label
+                      >
+                      <span
+                        class="m-HeaderSearch-icon fa fa-search"
+                        aria-hidden="true"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="m-HeaderNav-cta" role="region" aria-label="Sign In">
+                  <li class="m-HeaderNav-ctaGetStarted">
+                    <a href="#" role="button">Começar Gratuitamente Hoje</a>
+                  </li>
+                  <li class="m-HeaderNav-ctaLogin">
+                    <a href="#" role="button">Acessar</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- // Header Body -->
+          </div>
+        </header>
+      </div>
+      <!-- // Header -->
+
+      <!-- Body -->
+      <main class="m-Body" id="content">
+        <div class="m-BodyHeader" role="region" aria-label="Hero">
+          <div class="m-Hero" id="build_applications">
+            <div class="m-Hero-bg"></div>
+            <div class="m-Hero-body">
+              <div class="m-Hero-content">
+                <h1 class="m-Hero-title">
+                  Crie aplicativos empresariais 20x mais rápido com 100x menos
+                  código.
+                </h1>
+                <h2 class="m-Hero-subTitle">
+                  O Oracle APEX é a plataforma de aplicativos corporativos de
+                  baixo código mais popular do mundo.
+                </h2>
+                <div class="m-Hero-ctas">
+                  <a
+                    href="#"
+                    class="m-Hero-cta m-Hero-cta--primary"
+                    role="button"
+                    >Começar Gratuitamente Hoje</a
+                  >
+                  <a
+                    href="#"
+                    class="m-Hero-cta m-Hero-cta--secondary"
+                    role="button"
+                    >Exibir Preços</a
+                  >
+                </div>
+                <p class="m-Hero-meta">
+                  Get your free cloud service or install it on premises.
+                </p>
+              </div>
+              <div class="m-Hero-screenshot">
+                <img
+                  src="../assets/media/images/homepage/dark-hero-screenshot.png?v=1"
+                  srcset="
+                    ../assets/media/images/homepage/dark-hero-screenshot_2x.png?v=1 2x
+                  "
+                  alt=""
+                  class="m-Hero-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-BodySections" role="region" aria-label="Sections">
+          <!-- AVISO 24.2 -->
+          <div
+            class="m-Notice m-Notice--dark m-Notice--centered"
+            style="background-color: #46423f"
+            id="apex_24_2_announcement"
+            role="region"
+            aria-label="Announcement - O Oracle APEX 24.2 já está disponível! "
+          >
+            <div class="u-Grid-container">
+              <div class="u-Grid-row">
+                <div class="u-Grid-col m-Notice-body">
+                  <div class="m-Notice-content">
+                    <h3 class="m-Notice-title">
+                      O Oracle APEX 24.2 já está disponível!
+                    </h3>
+                  </div>
+                </div>
+                <div class="u-Grid-col m-Notice-actions">
+                  <a
+                    href="#"
+                    class="m-Notice-cta m-Notice-cta--primary"
+                    role="button"
+                    >Veja as Novidades</a
+                  >
+                  <a
+                    href="#"
+                    class="m-Notice-cta m-Notice-cta--secondary"
+                    role="button"
+                    >Exibir Anúncio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seções seguintes: conteúdo fiel ao original, com links desativados -->
+          <div
+            class="m-Section u-Grid-33-66 m-Section--ctaInline"
+            style="
+              background-color: #14282f;
+              background-image: url(../assets/media/images/homepage/dark-mode-mountain.jpg?v=1);
+            "
+            id="low_code"
+            role="region"
+            aria-labelledby="m-Section-title--low_code"
+          >
+            <div class="u-Grid-container">
+              <div class="u-Grid-row">
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--main"
+                >
+                  <h2 id="m-Section-title--low_code" class="m-Section-title">
+                    O que é o Oracle APEX?
+                  </h2>
+                  <p>
+                    O Oracle APEX é a plataforma de aplicativos corporativos de
+                    baixo código mais popular do mundo que permite criar
+                    aplicativos móveis e para a web escaláveis e seguros, com
+                    funcionalidades de padrão mundial, que podem ser implantadas
+                    em qualquer lugar, na nuvem ou on premises.
+                  </p>
+                  <p>
+                    Usando o APEX, os desenvolvedores podem desenvolver e
+                    implantar rapidamente aplicativos incríveis que solucionam
+                    problemas reais e agregam valor imediato. Você não precisa
+                    ser especialista em diversas tecnologias para oferecer
+                    soluções sofisticadas. Foque na solução do problema e deixe
+                    que o APEX cuide do resto.
+                  </p>
+                  <a href="#" class="m-Section-cta" role="button"
+                    ><span>Saiba mais sobre Baixo Código</span></a
+                  >
+                  <a href="#" class="m-Section-ctaSecondary" role="button"
+                    ><span>Explore as Funcionalidades</span></a
+                  >
+                </div>
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--media"
+                >
+                  <div class="m-Section-video">
+                    <iframe
+                      class="m-Section-videoIframe"
+                      src="https://www.youtube-nocookie.com/embed/qZD8wtn7qoI"
+                      frameborder="0"
+                      allowfullscreen
+                      title="What is Oracle APEX?"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exemplos de cards (links desativados) -->
+          <div
+            class="m-Section m-Section--compactBottom m-Section--inlineBorder m-Section--ctaInline"
+            id="categories"
+            role="region"
+            aria-labelledby="m-Section-title--categories"
+          >
+            <div class="u-Grid-container">
+              <div class="u-Grid-row">
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--main"
+                >
+                  <h2 id="m-Section-title--categories" class="m-Section-title">
+                    O que você pode fazer com o APEX?
+                  </h2>
+                  <p>
+                    O APEX fornece soluções ideais para diversos casos de uso,
+                    que podem incluir, por exemplo, situações envolvendo um
+                    sistema substituto de uma simples planilha ou um sistema
+                    empresarial de missão crítica usado por milhares de pessoas
+                    diariamente.
+                  </p>
+
+                  <div class="m-Section-lists">
+                    <div class="m-Section-list">
+                      <ul
+                        class="m-Cards m-NavCards m-NavCards--3col m-NavCards--fog"
+                      >
+                        <li class="m-Card">
+                          <a class="m-Card-wrap" href="#" role="button">
+                            <div
+                              class="m-Card-featureIcon fa fa-cloud"
+                              aria-hidden="true"
+                            ></div>
+                            <div class="m-Card-body">
+                              <h3 class="m-Card-title">
+                                Crie Novos Aplicativos para Dispositivos Móveis
+                                e Nuvem
+                              </h3>
+                              <div
+                                class="m-Card-icon fa fa-long-arrow-right"
+                                aria-hidden="true"
+                              ></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="m-Card">
+                          <a class="m-Card-wrap" href="#" role="button">
+                            <div
+                              class="m-Card-featureIcon fa fa-table-check"
+                              aria-hidden="true"
+                            ></div>
+                            <div class="m-Card-body">
+                              <h3 class="m-Card-title">
+                                Transforme Planilhas em Aplicativos
+                              </h3>
+                              <div
+                                class="m-Card-icon fa fa-long-arrow-right"
+                                aria-hidden="true"
+                              ></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="m-Card">
+                          <a class="m-Card-wrap" href="#" role="button">
+                            <div
+                              class="m-Card-featureIcon fa fa-forms"
+                              aria-hidden="true"
+                            ></div>
+                            <div class="m-Card-body">
+                              <h3 class="m-Card-title">
+                                Modernização do Oracle Forms
+                              </h3>
+                              <div
+                                class="m-Card-icon fa fa-long-arrow-right"
+                                aria-hidden="true"
+                              ></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="m-Card">
+                          <a class="m-Card-wrap" href="#" role="button">
+                            <div
+                              class="m-Card-featureIcon fa fa-puzzle-piece"
+                              aria-hidden="true"
+                            ></div>
+                            <div class="m-Card-body">
+                              <h3 class="m-Card-title">
+                                Extensões: SaaS e EBS
+                              </h3>
+                              <div
+                                class="m-Card-icon fa fa-long-arrow-right"
+                                aria-hidden="true"
+                              ></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="m-Card">
+                          <a class="m-Card-wrap" href="#" role="button">
+                            <div
+                              class="m-Card-featureIcon fa fa-share-alt"
+                              aria-hidden="true"
+                            ></div>
+                            <div class="m-Card-body">
+                              <h3 class="m-Card-title">
+                                Compartilhamento de Dados Externos
+                              </h3>
+                              <div
+                                class="m-Card-icon fa fa-long-arrow-right"
+                                aria-hidden="true"
+                              ></div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="m-Card">
+                          <a class="m-Card-wrap" href="#" role="button">
+                            <div
+                              class="m-Card-featureIcon fa fa-database-chart"
+                              aria-hidden="true"
+                            ></div>
+                            <div class="m-Card-body">
+                              <h3 class="m-Card-title">
+                                Relatórios de Datamart
+                              </h3>
+                              <div
+                                class="m-Card-icon fa fa-long-arrow-right"
+                                aria-hidden="true"
+                              ></div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--media"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- (Demais blocos iguais ao original; apenas links <a> com href="#" e role="button") -->
+
+          <div
+            class="m-Section m-Section--noPaddingBottom"
+            id="success_stories"
+            role="region"
+            aria-labelledby="m-Section-title--success_stories"
+          >
+            <div class="u-Grid-container">
+              <div class="u-Grid-row">
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--main"
+                >
+                  <h2
+                    id="m-Section-title--success_stories"
+                    class="m-Section-title"
+                  >
+                    Quem usa o APEX?
+                  </h2>
+                </div>
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--media"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="m-Section m-Section--compactBottom m-Section--noPaddingTop profile_cards m-Section--noBorder"
+            id="success_stories_description"
+            role="region"
+            aria-labelledby="m-Section-title--success_stories_description"
+          >
+            <div class="u-Grid-container">
+              <div class="u-Grid-row">
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--main"
+                >
+                  <p>
+                    O Oracle APEX vem sendo usado para proporcionar soluções
+                    bem-sucedidas a problemas de negócios reais em diferentes
+                    setores e geografias. Aqui mostramos apenas algumas
+                    histórias sobre como um grupo diversificado de clientes
+                    utilizou o Oracle APEX para resolver inúmeros problemas de
+                    negócios. <a href="#" role="button">Leia mais.</a>
+                  </p>
+
+                  <div class="m-Section-lists">
+                    <div class="m-Section-list">
+                      <ul class="u-Grid-row m-LogoCard-list">
+                        <li class="u-Grid-col m-LogoCard-listItem">
+                          <div class="m-LogoCard-wrap">
+                            <div class="m-LogoCard-thumbnail">
+                              <img
+                                class="m-LogoCard-thumbnailImg"
+                                src="https://apex.oracle.com/assets/media/company-logos/svg/siemens.svg?v=1"
+                                loading="lazy"
+                                alt="Siemens"
+                              />
+                            </div>
+                            <div class="m-LogoCard-body">
+                              <h3 class="m-LogoCard-title">Siemens</h3>
+                              <p class="m-LogoCard-description">
+                                A Siemens Mobility reduz a complexidade do
+                                projeto com o Oracle APEX
+                              </p>
+                              <a href="#" class="m-LogoCard-cta" role="button"
+                                >Leia a história da Siemens</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="u-Grid-col m-LogoCard-listItem">
+                          <div class="m-LogoCard-wrap">
+                            <div class="m-LogoCard-thumbnail">
+                              <img
+                                class="m-LogoCard-thumbnailImg"
+                                src="https://apex.oracle.com/assets/media/company-logos/svg/accenture.svg?v=1"
+                                loading="lazy"
+                                alt="Accenture"
+                              />
+                            </div>
+                            <div class="m-LogoCard-body">
+                              <h3 class="m-LogoCard-title">Accenture</h3>
+                              <p class="m-LogoCard-description">
+                                A Accenture impulsiona a inovação contínua com o
+                                Oracle APEX
+                              </p>
+                              <a href="#" class="m-LogoCard-cta" role="button"
+                                >Leia a história da Accenture</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="u-Grid-col m-LogoCard-listItem">
+                          <div class="m-LogoCard-wrap">
+                            <div class="m-LogoCard-thumbnail">
+                              <img
+                                class="m-LogoCard-thumbnailImg"
+                                src="https://apex.oracle.com/assets/media/company-logos/svg/telstra.svg?v=1"
+                                loading="lazy"
+                                alt="Telstra"
+                              />
+                            </div>
+                            <div class="m-LogoCard-body">
+                              <h3 class="m-LogoCard-title">Telstra</h3>
+                              <p class="m-LogoCard-description">
+                                A Telstra capacita desenvolvedores cidadãos e
+                                economiza milhões com o Oracle APEX
+                              </p>
+                              <a href="#" class="m-LogoCard-cta" role="button"
+                                >Leia a história da Telstra</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="u-Grid-col m-LogoCard-listItem">
+                          <div class="m-LogoCard-wrap">
+                            <div class="m-LogoCard-thumbnail">
+                              <img
+                                class="m-LogoCard-thumbnailImg"
+                                src="https://apex.oracle.com/assets/media/company-logos/svg/vodafone.svg?v=1"
+                                loading="lazy"
+                                alt="Vodafone"
+                              />
+                            </div>
+                            <div class="m-LogoCard-body">
+                              <h3 class="m-LogoCard-title">Vodafone</h3>
+                              <p class="m-LogoCard-description">
+                                A Vodafone automatiza o ciclo de vida da
+                                infraestrutura com o Oracle APEX
+                              </p>
+                              <a href="#" class="m-LogoCard-cta" role="button"
+                                >Leia a história da Vodafone</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--media"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- (Blocos “Business Innovations”, “Learn”, banners etc. seguem o mesmo padrão de links desativados) -->
+
+          <div
+            class="m-Section u-Grid-66-33 m-Section--inlineBorder m-Section--ctaInline"
+            id="powered_by_oracle"
+            role="region"
+            aria-labelledby="m-Section-title--powered_by_oracle"
+          >
+            <div class="u-Grid-container">
+              <div class="u-Grid-row">
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--main"
+                >
+                  <h2
+                    id="m-Section-title--powered_by_oracle"
+                    class="m-Section-title"
+                  >
+                    Seguro. Escalável. Livre.
+                  </h2>
+                  <p>
+                    Você sabia que o Oracle Database já contempla o Oracle APEX?
+                    Ele é uma funcionalidade totalmente suportada e sem custo do
+                    Oracle Database – a plataforma mais completa, integrada e
+                    segura para qualquer implantação em escala. Essa base sólida
+                    permite que os aplicativos criados com o APEX acessem e
+                    interajam de forma nativa com todos os recursos do Oracle
+                    Database.
+                  </p>
+                  <a href="#" class="m-Section-cta" role="button"
+                    ><span>Saiba Mais</span></a
+                  >
+                  <a href="#" class="m-Section-ctaSecondary" role="button"
+                    ><span>Fazer Download do Oracle APEX</span></a
+                  >
+                </div>
+                <div
+                  class="u-Grid-col m-Section-content m-Section-content--media"
+                >
+                  <img
+                    src="../assets/media/images/rw/illustrations/deployment.png?v=1"
+                    alt=""
+                    class="m-Section-img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /m-BodySections -->
+      </main>
+      <!-- // Body -->
+
+      <!-- Footer -->
+      <footer class="m-FooterContainer">
+        <div
+          class="m-Notice m-Notice--large m-Notice--centered"
+          id="closer"
+          role="region"
+          aria-label="Announcement - Para começar no Oracle APEX hoje "
+        >
+          <div class="u-Grid-container">
+            <div class="u-Grid-row">
+              <div class="u-Grid-col m-Notice-body">
+                <div class="m-Notice-content">
+                  <h3 class="m-Notice-title">
+                    Para começar no Oracle APEX hoje
+                  </h3>
+                </div>
+              </div>
+              <div class="u-Grid-col m-Notice-actions">
+                <a
+                  href="#"
+                  class="m-Notice-cta m-Notice-cta--primary"
+                  role="button"
+                  >Começar Gratuitamente</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-FooterNav">
+          <div class="u-Grid-container">
+            <div class="u-Grid-row">
+              <div class="m-FooterNav-meta u-Grid-col">
+                <a class="m-FooterNav-logoLink" href="#" role="button">
+                  <!-- SVG hashtag orclapex (mantido) -->
+                  <svg
+                    class="m-FooterNav-logo"
+                    role="img"
+                    aria-labelledby="m-FooterNav-logoText"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="155"
+                    height="48"
+                  >
+                    <title id="m-FooterNav-logoText">
+                      &#257;'p&#283;ks (#orclapex)
+                    </title>
+                    <!-- (path longo original mantido) -->
+                  </svg>
+                </a>
+                <p class="m-FooterNav-text">
+                  Saiba o que há de novo no Oracle APEX nos visitando nos seus
+                  canais sociais favoritos!
+                </p>
+                <ul class="m-FooterSocial">
+                  <li class="m-FooterSocial-facebook">
+                    <a href="#" role="button"
+                      ><span class="fa fa-facebook" aria-hidden="true"></span
+                      ><span class="u-VisuallyHidden"
+                        >Oracle APEX on Facebook</span
+                      ></a
+                    >
+                  </li>
+                  <li class="m-FooterSocial-linkedin">
+                    <a href="#" role="button"
+                      ><span class="fa fa-linkedin" aria-hidden="true"></span
+                      ><span class="u-VisuallyHidden"
+                        >Oracle APEX on LinkedIn</span
+                      ></a
+                    >
+                  </li>
+                  <li class="m-FooterSocial-twitter">
+                    <a href="#" role="button"
+                      ><span class="fa fa-twitter" aria-hidden="true"></span
+                      ><span class="u-VisuallyHidden"
+                        >Follow Oracle APEX on Twitter</span
+                      ></a
+                    >
+                  </li>
+                  <li class="m-FooterSocial-youtube">
+                    <a href="#" role="button"
+                      ><span
+                        class="fa fa-youtube-play"
+                        aria-hidden="true"
+                      ></span
+                      ><span class="u-VisuallyHidden"
+                        >Watch Oracle APEX on YouTube</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+
+                <div class="m-FooterLang">
+                  <label class="m-FooterLang-label" for="lang-selector"
+                    >Linguagem</label
+                  >
+                  <select class="m-FooterLang-selector" id="lang-selector">
+                    <option value="pt-br" lang="pt-br">
+                      Português (Brasil)
+                    </option>
+                    <option value="en" lang="en">English</option>
+                    <option value="de" lang="de">Deutsch</option>
+                    <option value="es" lang="es">Español</option>
+                    <option value="fr" lang="fr">Français</option>
+                    <option value="it" lang="it">Italiano</option>
+                    <option value="zh-tw" lang="zh-tw">中文 (繁體)</option>
+                    <option value="zh-cn" lang="zh-cn">中文（简体)</option>
+                    <option value="ja" lang="ja">日本語</option>
+                    <option value="ko" lang="ko">한국어</option>
+                    <option value="ar" lang="ar">العربية</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="m-FooterNav-links u-Grid-col">
+                <div class="u-Grid-row">
+                  <div class="u-Grid-col m-FooterNav-list1">
+                    <h3>Plataforma</h3>
+                    <ul class="m-List">
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Visão Geral</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">APEX no Oracle Cloud</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Por que o Oracle APEX?</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Baixo Código</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Funcionalidades</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Arquitetura</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Implantação</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Desenvolvido pela Oracle</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Preços</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="u-Grid-col m-FooterNav-list2">
+                    <h3>Soluções</h3>
+                    <ul class="m-List">
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Visão Geral</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Casos de Uso</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button"
+                          >Modernizando o Oracle Forms</a
+                        >
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Aplicativos e Plug-ins</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Histórias de Sucesso</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="u-Grid-col m-FooterNav-list3">
+                    <h3>Para Aprender</h3>
+                    <ul class="m-List">
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Visão Geral</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Para Começar</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Documentação</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button"
+                          >Treinamento e Certificações</a
+                        >
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Tutoriais</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Livros e Artigos</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Vídeos</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Recursos Adicionais</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="u-Grid-col m-FooterNav-list4">
+                    <h3>Comunidade</h3>
+                    <ul class="m-List">
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Visão Geral</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Eventos</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Ideas</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Recursos da Comunidade</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Office Hours</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Blog</a>
+                      </li>
+                      <li class="m-ListItem">
+                        <a href="#" role="button">Fóruns</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-Footer">
+          <div class="u-Grid-container">
+            <div class="u-Grid-row">
+              <div class="u-Grid-col">
+                <p class="m-Footer-copyright">
+                  <a href="#" role="button">&copy; Oracle</a> &middot; Built
+                  with
+                  <span class="fa fa-heart" aria-hidden="true"></span>
+                  <span class="u-VisuallyHidden">love</span> using
+                  <a href="#" role="button">Oracle APEX</a>
+                </p>
+              </div>
+              <div class="u-Grid-col">
+                <ul class="m-Footer-links">
+                  <li><a href="#" role="button">Privacy</a></li>
+                  <li><a href="#" role="button">Do Not Sell My Info</a></li>
+                  <li><div id="teconsent"></div></li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-Grid-row">
+              <div class="u-Grid-col">
+                <p class="m-Footer-text">
+                  A Oracle fornece o serviço apex.oracle.com somente para fins
+                  de demonstração. O armazenamento de dados confidenciais e de
+                  produção é proibido. Visite a página
+                  <a href="#" role="button">Getting Started</a> e saiba mais a
+                  respeito do uso do Oracle APEX em ambientes de produção.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- // Footer -->
+    </div>
+    <!-- // Page Container -->
+
+    <!-- JS do UI (ordem importa) -->
+    <script src="https://apex.oracle.com/assets-ui/js/jquery-3.6.4.min.js?v=23.4.28"></script>
+    <script src="https://apex.oracle.com/assets-ui/js/core.min.js?v=23.09.15"></script>
+
+    <script>
+      document.addEventListener(
+        'click',
+        function (e) {
+          const a = e.target.closest('a');
+          if (!a) return;
+          if (a.dataset && a.dataset.allow === 'true') return; // permitido
+          e.preventDefault();
+          e.stopPropagation();
+          // feedback opcional: piscar foco
+          a.setAttribute('aria-disabled', 'true');
+        },
+        true
+      );
+    </script>
+
+    <script type="module" src="./sdk/src/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e83effe51c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
