@@ -22,7 +22,7 @@ As aulas completas estão disponíveis em:
 
 Caso você conclua todas as aulas e desafios, receberá este certificado de conclusão (bonitão):
 
-![JavaScript](./certificate.png)
+![JavaScript](./certificado.png)
 
 ---
 
